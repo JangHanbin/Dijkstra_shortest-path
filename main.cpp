@@ -75,7 +75,7 @@ int main()
             if(lowest_metric_idx ==-1)
             {
                 cout<<"There is unreachable Node"<<endl;
-                continue;
+                break;
             }
 
             explore_lowest_metric_node(nodes[i], nodes[lowest_metric_idx], nodes[i][lowest_metric_idx], number_of_nodes); //explore lowest metric node
