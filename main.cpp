@@ -70,7 +70,7 @@ int main()
         bool explored_metric_idx[number_of_nodes];
         memset(explored_metric_idx, false, number_of_nodes*sizeof(int));
 
-        for (int j = 0; j < number_of_nodes -1 ; ++j) { // we don't need to explore own node. that's why set a number of interation count to number_of_nodes -1
+        for (int j = 0; j < number_of_nodes -1 ; ++j) { // we don't need to explore own node. that's why set a number of iteration count to number_of_nodes -1
             int lowest_metric_idx = find_min_metric(nodes[i], explored_metric_idx, number_of_nodes); // find metrics by lowest.
             if(lowest_metric_idx ==-1)
             {
